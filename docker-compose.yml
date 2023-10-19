@@ -1,0 +1,15 @@
+version: '3'
+services:
+  spider:
+    build:
+      context: ./backend/src  # Dockerfile location for the backend
+    ports:
+      - "5000:5000"  # Map container port 5000 to host port 5000
+    depends_on:
+      - ui
+
+  ui:
+    build:
+      context: ./frontend/rankings  # Dockerfile location for the frontend
+    ports:
+      - "3000:3000"  # Map container port 3000 to host port 3000

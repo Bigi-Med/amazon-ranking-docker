@@ -1,0 +1,165 @@
+.main {
+  background-color: lightgray;
+  min-height: 100vh;
+}
+
+.mainColumn {
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2%;
+  min-height: 30vh;
+}
+
+.pageContent {
+  display: flex;
+}
+
+.rightContainer {
+  flex: 1;
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px #649ad4;
+  margin-left: 1%;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  margin-right: 5px;
+}
+
+.leftContainer {
+  flex: 1;
+  border: 1px solid black;
+  margin-right: 1%;
+  border-radius: 20px;
+  margin-left: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 5px #649ad4;
+  background-color: white;
+}
+
+.titleContainer {
+  text-align: center;
+}
+
+.rankingsTable {
+  margin-top: 20px;
+}
+
+.rankingsHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0056b3;
+  color: white;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.rankingsData {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+}
+
+/* Input Styles */
+.inputAsin,
+.inputKeywords {
+  border: 1px solid #0056b3;
+  border-radius: 20px;
+  padding: 10px;
+  display: block;
+}
+
+.inputAsin:hover,
+.inputKeywords:hover {
+  border-color: #0003b3;
+}
+
+/* Red Border Styles for Empty Inputs */
+.redBorder {
+  border-color: red;
+}
+
+.redBorderKey{
+  border-color: red;
+}
+
+/* Button Styles */
+.sendButton {
+  display: block;
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  margin-top: 20px;
+  font-size: 16px;
+  margin-left: 90%;
+  cursor: pointer;
+}
+
+.sendButton:hover {
+  background-color: #0003b3;
+}
+
+.addButton {
+  background-color: #0056b3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  margin-top: 20px;
+  margin-left: 2%;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Keyword List Styles */
+.keywordList {
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+
+.keyword {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(252, 249, 249, 0.74);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0px 0px 5px #0056b3;
+}
+
+.deleteButton {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.loadingIcon {
+  width: 70px;
+  animation: spin 1s infinite linear;
+  margin-left: 50%;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
